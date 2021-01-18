@@ -1,0 +1,119 @@
+/***Navbar***/
+.navbar-brand img{
+    width: 25%;
+    height: auto;
+}
+
+.navbar-toggler-icon{
+    float: none;
+}
+
+@media (max-width: 500px){
+    .navbar-toggler-icon{
+        float: right;
+    }
+}
+
+/***Header***/
+
+#cuerpoIndex{
+    background: url(../img/header-back.jpg);
+    background-size: cover;
+    min-height: 490px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#cuerpoIndex {
+    background-image: url('../img/header-back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+    animation: aparecer;
+    animation-duration: 3s;
+}
+
+@keyframes aparecer {
+    0% { opacity: 0;}
+    25%{opacity: 0.2;}
+    50% { opacity: 0.5;}
+    75% { opacity: 0.7;}
+    100% {opacity: 1;}
+}
+ 
+h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    text-align: center;
+}
+/***About***/
+
+$bg-color:rgb(245, 245, 250);
+#cuerpoAbout {
+    background-color: $bg-color;
+}
+
+
+/***Contact***/
+
+.form-control{
+    width: 100px;
+    height: 100px;
+    transition: all 2s;
+}
+
+.form-control:focus{
+    width: 200px;
+    font-size: 34px;
+}
+
+/***Work***/
+
+#cuerpoWorks{
+    @extend #cuerpoAbout;
+}
+
+/***Price***/
+.card-text{
+   padding-bottom: 20px; 
+}
+
+/***BEM***/
+
+.titleHeader__coding{
+    font-style: italic;
+    font-weight: lighter;    
+}
+
+.workContentRight__titulo{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.workContentRight__info{
+    font-style: italic;
+    font-size: 16px;
+}
+
+.containerWork__titulo{
+    color: brown;
+}
+
+.aboutContentRight{
+   float: inline-end;
+}
+
+/***Footer***/ 
+
+footer{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer--gradient{
+    background-image: linear-gradient(to right,#F9F9F9,#CDC5D2);
+    
+}
